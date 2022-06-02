@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="password.js"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Desafio HTC</title>
+  </head>
+  <body>
+    <form name="form">
+        <div class="form-field">
+      <h1>Faça seu cadastro</h1>
+      <label for="name-field" >Nome completo</label>
+      <input
+        required
+        class="box"
+        id="name-field"
+        type="text"
+        minlength="4"
+        placeholder="Digite seu nome completo"
+      />
+      <label for="email-field">E-mail</label>
+      <input
+        required
+        class="box"
+        id="email-field"
+        type="email"
+        placeholder="Digite seu e-mail"
+      />
+      <label for="passwordfield">Senha</label>
+      <img id="closedeye" onclick="eyeclick()" src="imgs/closedeye.png" alt="">
+      <input
+        name="password"
+        required
+        class="box"
+        id="passwordfield"
+        type="password"
+        placeholder="Crie uma senha"
+      />
+      <label for="confirm-password-field">Confirmar Senha</label>
+      <input
+        name="confirmpassword"
+        required
+        class="box"
+        id="confirm-password-field"
+        type="password"
+        placeholder="Crie uma senha"
+      />
+      <input id="checkbox-field" type="checkbox" required/>
+      <label class="box-eula" for="checkbox-field"
+        >Aceito os termos de uso e concordo com as
+        <a href="#">políticas de privacidade</a></label
+      >
+      <button class="button-index" type="submit" onclick="return validate()">Cadastrar</button>
+    </form>
+    </div>
+  </body>
+</html>
